@@ -7,17 +7,17 @@ const Counter = () => {
       <section>
         <Container>
           <div className="py-10">
-            <h4 className="text-2xl font-bold font-roboto text-center pb-4">
+            <h4 className="text-5xl font-bold font-roboto text-center pb-4 text-[#2F327D]">
               Our Success
             </h4>
-            <p className="text-center text-gray-600 w-154.25 m-auto">
+            <p className="text-center text-[#010514] w-154.25 m-auto text-lg opacity-[0.8]">
               Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
               sollicitudin at nec nam et pharetra gravida. Adipiscing a quis
               ultrices eu ornare tristique vel nisl orci.{" "}
             </p>
           </div>
           <div className="py-20">
-            <div className="flex justify-between items-center">
+            <div className="md:flex justify-between items-center">
               <div className="text-center">
                 <h3 className="text-8xl bg-linear-to-t from-sky-500 to-indigo-500 text-transparent bg-clip-text">15K+</h3>
                 <p className="text-[32px] text-[#010514] opacity-[0.8]">Students</p>
