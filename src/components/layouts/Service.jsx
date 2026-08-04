@@ -19,9 +19,9 @@ const Service = () => {
               tools needed to run a successful school or office.
             </p>
           </div>
-          <div className="py-30 border">
-            <div className="md:flex justify-between mb-5">
-              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%] border  /">
+          <div className="py-30 ">
+            <div className="md:flex  justify-between  items-center">
+              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%]/">
                <div className="text-center">
                  <Image imgSrc={ServiceOne} imgAlt={"service-image"} className={" absolute  top-0 left-[50%] -translate-1/2"}/>
                 <h5 className="text-[#2F327D] text-3xl font-medium font-poppins w-85.75 text-center mb-6 m-auto">
@@ -33,27 +33,25 @@ const Service = () => {
                 </p>
                </div>
               </div>
-              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%] border /">
+              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%]/">
                <div className="text-center">
                  <Image imgSrc={ServiceTwo} imgAlt={"service-image"} className={" absolute  top-0 left-[50%] -translate-1/2"}/>
                 <h5 className="text-[#2F327D] text-3xl font-medium font-poppins w-85.75 text-center mb-6 m-auto">
-                  Online Billing, Invoicing, & Contracts
+                  Easy Scheduling & Attendance Tracking
                 </h5>
                 <p className="text-[#696984] text-[20px] font-poppins font-normal w-85.25  m-auto">
-                  Simple and secure control of your organization’s financial and
-                  legal transactions. Send customized invoices and contracts
+                  Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance
                 </p>
                </div>
               </div>
-              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%] border /">
+              <div className="px-13.5 pt-30.5 pb-12.5 shadow-box rounded-[20px] relative md:w-[32%]/">
                <div className="text-center">
                  <Image imgSrc={ServiceThree} imgAlt={"service-image"} className={" absolute  top-0 left-[50%] -translate-1/2"}/>
                 <h5 className="text-[#2F327D] text-3xl font-medium font-poppins w-85.75 text-center mb-6 m-auto">
-                  Online Billing, Invoicing, & Contracts
+                  Customer Tracking
                 </h5>
                 <p className="text-[#696984] text-[20px] font-poppins font-normal w-85.25  m-auto">
-                  Simple and secure control of your organization’s financial and
-                  legal transactions. Send customized invoices and contracts
+                  Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization 
                 </p>
                </div>
               </div>
