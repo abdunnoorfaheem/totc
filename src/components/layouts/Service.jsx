@@ -48,7 +48,7 @@ const Service = () => {
                <div className="text-center">
                  <Image imgSrc={ServiceThree} imgAlt={"service-image"} className={" absolute  top-0 left-[50%] -translate-1/2"}/>
                 <h5 className="text-[#2F327D] text-3xl font-medium font-poppins w-85.75 text-center mb-6 m-auto">
-                  Customer Tracking
+                  Customer Tracking Everythings
                 </h5>
                 <p className="text-[#696984] text-[20px] font-poppins font-normal w-85.25  m-auto">
                   Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization 
