@@ -13,11 +13,11 @@ const Portal = () => {
             <div className="text-center">
               <Heading
                 Tag="h3"
-                className="text-[44px] font-semibold font-poppins text-[#00CBB8] m-auto mb-6">
+                className="md:text-[44px] font-semibold font-poppins text-[#00CBB8] m-auto mb-6">
                 <span className="text-[#2F327D]">What is</span> TOTC?
               </Heading>
               {/* <h3 className='text-[44px] font-semibold font-poppins text-[#00CBB8] m-auto mb-6'><span className='text-[#2F327D] '>What is</span> TOTC?</h3> */}
-              <p className="text-[#696984] w-222 text-xl font-normal font-poppins m-auto">
+              <p className="text-[#696984] md:w-222 text-xl font-normal font-poppins m-auto">
                 TOTC is a platform that allows educators to create online
                 classes whereby they can store the course materials online;
                 manage assignments, quizzes and exams; monitor due dates; grade
