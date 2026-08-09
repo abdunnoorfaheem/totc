@@ -9,7 +9,7 @@ const Material = () => {
   return (
     <>
     
-    <section className='py-12'>
+    <section className='py-30'>
         <Container>
               
               <div className="md:flex justify-between items-center">
