@@ -8,6 +8,7 @@ import Service from "../layouts/Service";
 import Container from "../Container";
 import Heading from "../Heading";
 import Material from "../layouts/Material";
+import Features from "../layouts/Features";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -53,6 +54,7 @@ const Home = () => {
         </div>
       </Container>
       <Material/>
+      <Features/>
     </>
   );
 };
