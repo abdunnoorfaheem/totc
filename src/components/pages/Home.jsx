@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import ArrivalCourse from "../layouts/ArrivalCourse";
 import Banner from "../layouts/Banner";
 import Counter from "../layouts/Counter";
 import Portal from "../layouts/Portal";
@@ -9,22 +8,18 @@ import Container from "../Container";
 import Heading from "../Heading";
 import Material from "../layouts/Material";
 import Features from "../layouts/Features";
+import ArrivalCourse from "../layouts/ArrivalCourse";
+import { DataContext } from "../../context/DataContext";
+
 
 const Home = () => {
-  const [data, setData] = useState([]);
 
+let {products} =useContext(DataContext);
 
-  useEffect(() => {
-    async function viewData() {
-      try {
-        let dataAll = await axios.get("https://dummyjson.com/products");
-        setData(dataAll.data.products);
-      } catch (error) {
-        console.error("Data fetching error:", error);
-      }
-    }
-    viewData();
-  }, []); 
+let productData= products || []
+
+console.log(productData)
+  
 
   return (
     <>
@@ -32,29 +27,26 @@ const Home = () => {
       <Counter />
       <Service />
       <Portal />
-
+ 
       <Container>
-        <Heading
-          Tag="h3"
-          className="text-[44px] font-semibold font-poppins text-[#2F327D] py-10 text-center"
-        >
-          Arrival Courses
-        </Heading>
-
-        <div className="flex flex-wrap gap-6 justify-center">
-          {data.map((item) => (
-            <div className="w-full md:w-[23%]" key={item.id}>
-              <ArrivalCourse
-                ImageSrc={item.thumbnail}
-                headingText={item.title}
-                paragraphText={item.description}
-              />
-            </div>
-          ))}
+        <div className="flex flex-wrap py-10 gap-x-5 gap-y-10">
+            {
+        productData.map((item)=>(
+          <div className="w-[24%] ">
+            
+              <ArrivalCourse ImageSrc={item.thumbnail} headingText={item.title} paragraphText={item.decription} />
+            
+          </div>
+        ))
+      }
         </div>
       </Container>
+
       <Material/>
       <Features/>
+    
+      
+      
     </>
   );
 };

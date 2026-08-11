@@ -4,6 +4,8 @@ import Heading from "../Heading";
 import Paragraph from "../Paragraph";
 
 const ArrivalCourse = ({ ImageSrc, headingText, paragraphText }) => {
+
+  
   return (
     
     <div className="px-6 py-6 shadow-box rounded-[20px] bg-white h-full flex flex-col justify-between">
