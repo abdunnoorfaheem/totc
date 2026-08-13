@@ -32,7 +32,7 @@ console.log(productData)
         <div className="flex flex-wrap py-10 gap-x-5 gap-y-10">
             {
         productData.map((item)=>(
-          <div className="w-[24%] ">
+          <div className="w-[24%] text-[rgb(40,43,111)]">
             
               <ArrivalCourse ImageSrc={item.thumbnail} headingText={item.title} paragraphText={item.decription} />
             

@@ -8,7 +8,8 @@ import Square from "../../assets/square.png";
 import BoxSqare from "../../assets/boxSqare.png";
 import User from "../../assets/usericon.png";
 import ToolImg from "../../assets/toolsPartImage.png";
-
+import view from "../../assets/view.png";
+import Send from "../../assets/send.png";
 const Features = () => {
   return (
     <>
@@ -66,7 +67,10 @@ const Features = () => {
         <Container>
           <div className="flex justify-between items-center">
             <div className="">
-              <Heading className="text-[40px] font-semibold font-poppins text-[#2F327D] w-98.25 mb-5"><span className="text-[#00CBB8]">Tools</span> For Teachers And Learners</Heading>
+              <Heading className="text-[40px] font-semibold font-poppins text-[#2F327D] w-98.25 mb-5">
+                <span className="text-[#00CBB8]">Tools</span> For Teachers And
+                Learners
+              </Heading>
               <Paragraph className="text-[#696984] text-[22px] font-normal font-poppins w-142">
                 Class has a dynamic set of teaching tools built to be deployed
                 and used during class. Teachers can handout assignments in
@@ -75,6 +79,56 @@ const Features = () => {
             </div>
             <div className="">
               <Image imgSrc={ToolImg} />
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className="pb-25">
+        <Container>
+          <div className="flex justify-between items-center">
+            <div className="W-[48%]">
+              <div className="">
+                <div className="shadow-card rounded-[19px] py-8.5 px-6.5  w-[465px] relative">
+                  <div className="bg-[#CDD8FF] text-[#717FB0] inline-block py-2 px-8 rounded-[72px]">
+                    Question 1
+                  </div>
+                  <Heading
+                    className="text-[31px] font-poppins font-semibold text-[#55578D] my-9 w-[359px]"
+                    Tag="H4"
+                  >
+                    True or false? This play takes place in Italy
+                  </Heading>
+                  <div className="">
+                    <Image
+                      className={"relative w-[660px]  "}
+                      imgSrc={view}
+                    />
+                  </div>
+                  <div className="shadow-cardTwo py-5 px-7 rounded-[19px] absolute  left-35 -bottom-10 bg-white">
+                    <div className="flex gap-x-7]">
+                      <div className="">
+                        <Image imgSrc={Send} />
+                      </div>
+                      <Heading
+                        Tag="h5"
+                        className="text-[#41BE90] font-poppins font-semibold text-[20px] leading-[160%]  w-[190px]"
+                      >
+                        Your answer was sent successfully
+                      </Heading>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="W-[48%]">
+              <Heading className="text-[40px] font-semibold font-poppins leading-[160%] text-[#2F327D] w-86.75">
+                Assessments, <span className="text-[#00CBB8]">Quizzes</span>,
+                Tests
+              </Heading>
+              <Paragraph className="text-[22px] font-normal font-poppins leading-[180%] w-[520px]">
+                Easily launch live assignments, quizzes, and tests. Student
+                results are automatically entered in the online gradebook.
+              </Paragraph>
             </div>
           </div>
         </Container>
