@@ -10,6 +10,9 @@ import User from "../../assets/usericon.png";
 import ToolImg from "../../assets/toolsPartImage.png";
 import view from "../../assets/view.png";
 import Send from "../../assets/send.png";
+import Educators from '../../assets/educator.png'
+
+
 const Features = () => {
   return (
     <>
@@ -100,7 +103,7 @@ const Features = () => {
                   </Heading>
                   <div className="">
                     <Image
-                      className={"relative w-[660px]  "}
+                      className={"relative w-165  "}
                       imgSrc={view}
                     />
                   </div>
@@ -111,7 +114,7 @@ const Features = () => {
                       </div>
                       <Heading
                         Tag="h5"
-                        className="text-[#41BE90] font-poppins font-semibold text-[20px] leading-[160%]  w-[190px]"
+                        className="text-[#41BE90] font-poppins font-semibold text-[20px] leading-[160%]  w-47.5"
                       >
                         Your answer was sent successfully
                       </Heading>
@@ -125,10 +128,24 @@ const Features = () => {
                 Assessments, <span className="text-[#00CBB8]">Quizzes</span>,
                 Tests
               </Heading>
-              <Paragraph className="text-[22px] font-normal font-poppins leading-[180%] w-[520px]">
+              <Paragraph className="text-[22px] font-normal font-poppins leading-[180%] w-130">
                 Easily launch live assignments, quizzes, and tests. Student
                 results are automatically entered in the online gradebook.
               </Paragraph>
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className="pb-35">
+        <Container>
+          <div className="flex justify-between items-center">
+            <div className="">
+              <Heading className="text-[#2F327D] text-[40px] font-semibold font-poppins w-105 leading-[160%] mb-5"><span className="text-[#00CBB8]">Class Management</span> Tools for Educators</Heading>
+              <Paragraph className="text-[#696984] w-119.5 leading-[180%]">Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+</Paragraph>
+            </div>
+            <div className="">
+              <Image imgSrc={Educators}/>
             </div>
           </div>
         </Container>
