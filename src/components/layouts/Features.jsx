@@ -10,7 +10,8 @@ import User from "../../assets/usericon.png";
 import ToolImg from "../../assets/toolsPartImage.png";
 import view from "../../assets/view.png";
 import Send from "../../assets/send.png";
-import Educators from '../../assets/educator.png'
+import Educators from '../../assets/educator.png';
+import Discussions from '../../assets/discussions.png'
 
 
 const Features = () => {
@@ -147,6 +148,22 @@ const Features = () => {
             <div className="">
               <Image imgSrc={Educators}/>
             </div>
+          </div>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <div className="flex justify-between items-center">
+            <div className="">
+              <Image imgSrc={Discussions} imgAlt={"Discussions image"}/>
+            </div>
+            <div className="">
+              <Heading Tag="h3" className="text-[#00CBB8] text-[40px] font-semibold font-poppins w-[274px]"><span className="text-[#2F327D]">One-on-One</span> Discussions</Heading>
+              <p className="text-[#696984] w-[505px] text-[22px] leading-[180%] font-normal font-poppins">Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
+            </div>
+          </div>
+          <div className="text-center pb-14.25 ">
+            <a href="#" className="border border-[#49BBBD] px-9.25 py-4.25 rounded-[80px] text-[#49BBBD] hover:bg-[#49BBBD] hover:border-0 hover:text-[#fff]">See more features</a>
           </div>
         </Container>
       </section>
